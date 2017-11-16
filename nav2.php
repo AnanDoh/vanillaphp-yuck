@@ -7,16 +7,16 @@
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
-        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        
+         <a class="nav-link" href="custmenu.php">Menu<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-
+         <a class="nav-link" href="custOrder.php">My Orders<span class="sr-only">(current)</span></a>
       </li>
     </ul>
-        <form action='logOut.php' method='post'>
+        <form action='logout.php' method='post'>
           <button type='submit' class='btn btn-warning btn-md active' role='button' aria-pressed='true' name='penis'>logout</a> </td>
         </form>
   </div>

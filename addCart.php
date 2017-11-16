@@ -1,7 +1,8 @@
 <?php
-			include("connect.php");
-            session_start();
-            print_r($_POST);
+		include("connect.php");
+        session_start();
+        print_r($_POST);
+        
 		foreach($_POST as $name => $content) { // Most people refer to $key => $value
 		   echo "The HTML name: $name <br>";
 		   echo "The content of it: $content <br>";

@@ -12,7 +12,7 @@
   </head>
   <body>
   	 <body style="background-color:#212121;">
-	   <?php include('navbar.php'); ?> 
+     <?php include('nav2.php'); ?> 
      <h1 style="color:#DF0500 ;">My Cart </h1>
 
 
@@ -43,7 +43,7 @@
                     ."<th scope='row' style='color:#F9D005';>" . $row["display_name"] . "</th>"
                     ."<td style='color:#F9D005';>$" . $row["price"] . "</td>"
                     ."<td style='color:#F9D005';>" . $row["size"] . "</td>"
-                    ."<form action='itemdrop.php' method='post'>"
+                    ."<form action='cartLogic.php' method='post'>"
                     ."<td> <button type='submit' class='btn btn-warning btn-md active' role='button' aria-pressed='true' name=" . $row["product_id"] . ">-</a> </td>
                     </form>
                 </tr>";
@@ -53,7 +53,7 @@
             }
 
         ?> 
-          <form action='mensub.php' method='post'>
+          <form action='checkLogic.php' method='post'>
             <td> <button type='submit' class='btn btn-warning btn-md active' role='button' aria-pressed='true' name="asd">Checkout</a> </td>
           </form>
 

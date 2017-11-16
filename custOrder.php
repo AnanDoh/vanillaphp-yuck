@@ -1,4 +1,4 @@
-<!doctype html>
+  <!doctype html>
 <html lang="en">
   <head>
     <title>TsarBucks</title>
@@ -12,8 +12,8 @@
   </head>
   <body>
   	 <body style="background-color:#212121;">
-	   <?php include('navbar.php'); ?>
-     <h1 style="color:#DF0500 ;">Pending Orders </h1>
+     <?php include('nav2.php'); ?> 
+     <h1 style="color:#DF0500 ;">My Order </h1>
 
 
 
@@ -42,7 +42,6 @@
             if ($result->num_rows > 0) {
                 while($row = $result->fetch_assoc()) {
                 	$_SESSION['Something']=$row['completed'];
-                	$_SESSION['order_id']=$row["order_id"];
                     echo 
                    
                   "<tr>"
@@ -51,8 +50,8 @@
                     ."<td style='color:yellow ;'>" . $row["size"] . "</td>"
                     ."<td style='color:yellow ;'>" . $row["quantity"] . "</td>"
                     ."<td style='color:yellow ;'>" . $row["price"] . "</td>"
-					."<form action='p3.php' method='post'>"
-                    ."<td> <button type='submit' class='btn btn-warning btn-md active' role='button' aria-pressed='true' name=" . $row["order_id"] . ">" . $row["completed"] . "</a> </td>
+					."<form >"
+                    ."<td> <button type='submit' class='btn btn-primary btn-md active' role='button' aria-pressed='true' name=" . $row["order_id"] . ">" . $row["completed"] . "</a> </td>
                     </form>
 
                 </tr>";

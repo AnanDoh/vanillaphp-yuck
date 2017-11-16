@@ -1,4 +1,17 @@
+<?php
+session_start();
+if (isset( $_SESSION['login_user'])) {
+    if ( $_SESSION['login_user'] == "Customer") {
+      header("Location: custmenu.php");
+    } elseif ($_SESSION['login_user'] == "Barista") {
+      header("Location: barCheck.php");
+    }
+    else{
+      header("Location: index.php");
+    }
+}
 
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -18,7 +31,7 @@
 
 
 	<div id="login">
-		<a href="login.php"><button type="button" class="btn btn-secondary btn-lg ">Login</button></a>
+		<a href="logForm.php"><button type="button" class="btn btn-secondary btn-lg ">Login</button></a>
 	    <a href="https://youtu.be/KxcP7TRY178?t=8"><button type="button" class="btn btn-danger btn-lg ">Leave</button></a>
 	    
 	</div>

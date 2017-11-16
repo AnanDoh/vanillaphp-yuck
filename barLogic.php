@@ -15,7 +15,7 @@
 		if ($conn->query($sql) === TRUE) {
 		    echo "Record updated successfully";
 
-		    header("Location: barista1.php");
+		    header("Location: barCheck.php");
 
 		} else {
 		    echo "Error updating record: " . $conn->error;
