@@ -1,0 +1,14 @@
+
+body { 
+    background-image: url('https://cdn.dribbble.com/users/94569/screenshots/2027634/communist_coffee-01.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+#login {
+    padding-top: 5%;
+    padding-right: 45%;
+    padding-bottom: 50px;
+    padding-left: 45%;
+}
